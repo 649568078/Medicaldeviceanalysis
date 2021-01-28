@@ -4,7 +4,7 @@ import xlwt
 from xlutils.copy import copy
 import os
 
-workbook = xlrd.open_workbook('待剔除condit.xls')  # 打开主表复制表格
+workbook = xlrd.open_workbook('备份/待剔除condit.xls')  # 打开主表复制表格
 table = workbook.sheets()[0]  # 获取表
 nrows = table.nrows  # 获取该sheet中的有效行数
 ncols1 = table.col_values(0)[1:]  # 获取第一列
